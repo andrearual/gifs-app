@@ -1,0 +1,16 @@
+
+  <div class="card mb-2 text-center bg-dark">
+    <!-- cuando se quiere decirle a angular que el valor de algún atributo de un elemento HTML es igual a una expresion JavaScript
+    se pone en llaves cuadradas, con esto hacemos el binding del valor de una expresión-->
+
+    <shared-lazy-image
+      [url]="gif.images.downsized_medium.url"
+      [alt]="gif.title || 'No name'"
+      ></shared-lazy-image>
+
+    <div class="card-body text-white">
+      <p class="card-text">
+        {{ gif.title || 'No title'}}
+      </p>
+    </div>
+  </div>
